@@ -4,7 +4,6 @@
 // Don't change any line other than 27.
 // Execute `rustlings hint traits5` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
 
 pub trait SomeTrait {
     fn some_function(&self) -> bool {
@@ -25,7 +24,7 @@ struct SomeStruct {
 impl SomeTrait for SomeStruct {}
 impl OtherTrait for SomeStruct {}
 
-fn some_func(item: ??) -> bool {
+fn some_func(item: SomeStruct) -> bool {
     item.some_function() && item.other_function()
 }
 
